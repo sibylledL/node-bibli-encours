@@ -6,14 +6,19 @@ Il s'agit d'un projet en cours de construction. Je me suis basée sur un projet 
 
 - /accueil:
   ensemble des documents ajouter présentés en grille.
--/livres/id
+  
+-/livres/id:
    sur la page d'accueil, au clic sur un "voir plus" on passe sur une autre route qui permet d'accéder à plus d'informations.
+   
 -/admin:
   à la racine de cette route ce trouve la liste des livres présents dans la bases de données. un bouton edit permet d'éditer les informations.
+  
 -/admin/addbook
   permet d'ajouter un livre dans une base de données / le package multer est utilisé pour uploader une image.
+  
 -admin/users
-  permet de créer un compte
+  permet de créer un compte.
+  
 -admin/login
   permet de s'enregistrer.
 
