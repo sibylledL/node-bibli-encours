@@ -1,8 +1,10 @@
 # node-bibli-encours
 
-le projet est construit avec node.js, express.js, MongoDB, pug.
+le projet est en cours de construction et de travail. Il n'y a pas de finition css ni html, je travaille essentiellement sur la structure back et la base de donnée. 
 
-Il s'agit d'un projet en cours de construction. Je me suis basée sur un projet personnel d'un site de diffusion de documents d'archives, d'images et de vidéos. Ce projet me sert de terrain d'entrainement et d'expérimentation pour ce futur projet. Ici j'ai commencé avec des livres et quelques informations (auteur, ISBN, année de publication, couverture, resumé...). J'ai appris à me servir de différents packages et fonctionnalités permises par node et express. Le projet est contruit sur plusieurs routes:
+Il est basé sur node.js, express.js, MongoDB, pug.
+
+Je me suis basée sur un projet personnel d'un site de documents d'archives, d'images et de vidéos que j'ai l'intention de réaliser dans les prochains mois. Ce projet me sert de terrain d'entrainements et d'expérimentations. Ici j'ai commencé avec des livres et quelques informations (auteur, ISBN, année de publication, couverture, resumé...). J'ai appris à me servir de différents packages et fonctionnalités permises par node et express. Le projet est contruit sur plusieurs routes:
 
 - /accueil:
   ensemble des documents ajoutés et présentés en grille.
@@ -28,5 +30,7 @@ Prochain objectif :
   - ajout bouton et fonction supprimer dans la page edit.
   - régler le problème de déploiement sur Heroku. Le chemin des images casses à la commande "git push heroku master"
 
-
-Ce projet est en cours de réalisation, malgrès les difficultés j'ai toujours un grand plaisir à le travailler!
+Difficultés: 
+  - déploiement sur heroku qui à mit beaucoup de choses de branle.
+  - authentification avec passport.
+malgrès les difficultés j'ai toujours un grand plaisir à le travailler!
