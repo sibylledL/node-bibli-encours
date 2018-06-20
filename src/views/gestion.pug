@@ -1,0 +1,32 @@
+extends layout
+block content
+  div(class="bouton-rapide")
+    a(href='http://localhost:3005/admin/addbook') Ajouter un livre
+  table
+    tr
+      th titre
+      th auteur
+      th prix
+      th isbn
+      th date de publication
+      th catégorie
+      th couverture
+      th resume
+      th intro
+    each livre in livres
+      tr
+        td= livre.titre
+        td= livre.auteur
+        td= livre.prix
+        td= livre.isbn
+        td= livre.date
+        td= livre.cat
+        td
+          - var img = livre.couv
+          img(src='/uploads/'+ img)
+        td= livre.resume
+        td= livre.info
+        td
+          - var linkedit = livre._id
+          a(href='/admin/edit/'+ linkedit)
+            button Edit

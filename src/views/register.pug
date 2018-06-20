@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title node-bibli admin
+  body
+    h1 Enregister un administrateur
+    form(action='/admin/users', method="post")
+      input(type="text", name="name", placeholder="username")
+      br
+      input(type="text", name="password", placeholder="mot de passe")
+      br
+      input(type="submit", value="Register")

@@ -1,0 +1,26 @@
+doctype
+html
+  head
+    title node-bibli admin
+  body
+    h1 Ajouter un livre
+    form(action='/admin/addbook', method='post' enctype="multipart/form-data")
+      input(type="text", name="titre", placeholder="titre du livre")
+      br
+      input(type="text", name="auteur", placeholder="auteur")
+      br
+      input(type="text", name="prix", placeholder="prix")
+      br
+      input(type="text", name="isbn", placeholder="isbn")
+      br
+      input(type="text", name="date", placeholder="date")
+      br
+      input(type="file", name="couv", placeholder="fichier jpeg")
+      br
+      input(type="text", name="resume", placeholder="resume")
+      br
+      input(type="text", name="info", placeholder="info")
+      br
+      input(type="text", name="cat", placeholder="catégorie")
+      br
+      input(type="submit", value="envoyer")

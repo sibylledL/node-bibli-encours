@@ -1,0 +1,64 @@
+extends layout
+block content
+  h1 Librairie
+  div(class='div-class')
+    ul
+      a(href="http://localhost:3005/accueil")
+        li(class="onglet-bibli") biliothèque
+      a(href="http://localhost:3005/accueil/categorie")
+        li(class="onglet-cat") catégorie
+  div(id="cat")
+    div(class="cat-poesie cat")
+      div(class="col1")
+        h1 Poésie
+      div(class="col2")
+        each livre in livres
+          if livre.cat === "Poésie"
+            - var auteur = livre.auteur
+            - var titre = livre.titre
+            - var date = livre.date
+            - var prix = livre.prix
+            div(class="smallfiche")
+              - var img = livre.couv
+              img(src='/uploads/'+ img)
+              p #{titre}, #{auteur}
+              p #{date}
+              br
+              p= livre.resume
+    div(class="cat-roman cat")
+      div(class="col1")
+        h1 Roman
+      div(class="col2")
+        each livre in livres
+          if livre.cat === "Roman"
+            - var auteur = livre.auteur
+            - var titre = livre.titre
+            - var date = livre.date
+            - var prix = livre.prix
+            div(class="smallfiche")
+            - var img = livre.couv
+            img(src='/uploads/'+ img)
+            p #{titre}, #{auteur}
+            p #{date}
+            br
+            p= livre.resume
+                
+                
+    div(class="cat-histoire cat")
+      div(class="col1")
+        h1 Histoire
+      div(class="col2")
+        each livre in livres
+          if livre.cat === "Histoire"
+            - var auteur = livre.auteur
+            - var titre = livre.titre
+            - var date = livre.date
+            - var prix = livre.prix
+            div(class="smallfiche")
+              - var img = livre.couv
+              img(src='/uploads/'+ img)
+              p #{titre}, #{auteur}
+              p #{date}
+              br
+              p= livre.resume
+                  

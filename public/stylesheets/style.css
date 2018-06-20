@@ -1,0 +1,164 @@
+body{
+  font-size: 10px;
+}
+
+h1{
+  color:red;
+}
+.container{
+  border:1px solid green;
+}
+.navbar{
+border:1px solid red;
+display:flex;
+flex-direction: column;
+height: 100px;
+}
+
+/*gestion*/
+table{
+  border:1px solid black;
+  width:90%;
+}
+th{
+  margin-right:30px;
+}
+
+img{
+  height:80px;
+}
+
+.bouton-rapide{
+  display:flex;
+  justify-content: flex-end;
+  width:90%;
+  height: 80px;
+  margin-top:50px;
+}
+/*index*/
+li{
+  display:inline-block;
+  margin-right:20px;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+#shelf{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+}
+
+.fiche-livre{
+  width:200px;
+  max-height:550px;
+  display:flex;
+  flex-direction:column;
+  margin:20px;
+}
+
+ .fiche-livre img{
+  height:250px;
+ }
+
+ p{
+   margin:0px;
+ }
+
+ .titre{
+   font-weight:bold;
+   margin-top:10px;
+   margin-bottom:10px;
+   height:50px;
+ }
+
+ .prix{
+   display:flex;
+   flex-direction:row;
+ }
+
+ .resume{
+   margin-top:30px;
+ }
+ .cat-poesie{
+   height:60px;
+ }
+
+ .onglet-bibli{
+   padding:5px;
+   border:1px solid green;
+ }
+
+ .onglet-bibli:hover{
+   background-color:pink;
+ }
+
+ .onglet-cat{
+   padding:5px;
+   border:1px solid orange;
+ }
+
+ .onglet-cat:hover{
+   background-color:yellow;
+ }
+
+ #cat{
+   display:block;
+ }
+
+ .cat{
+   display:flex;
+   flex-direction:row;
+   border:1px solid black;
+   height:auto;
+   width:40%
+ }
+ .col1{
+   width:90%
+ }
+
+ .col1 h1{
+   margin:0px;
+   font-size:25px;
+   padding-left:10px;
+ }
+ .col2{
+   padding-bottom:10px;
+   display:flex;
+   flex-direction:column;
+ }
+
+ .col2 img{
+   height:200px;
+ }
+
+
+ /*fiche*/
+ .container{
+   display:flex;
+   flex-direction:row;
+   margin-left:20px;
+   margin-right:20px;
+ }
+ .couverture{
+   width:30%;
+   height:300px;
+ }
+ .resume{
+   width:70%;
+   padding-right:50px;
+ }
+ .boutique{
+   display:flex;
+   flex-direction:row;
+ }
+ .prix{
+   justify-content:flex-start;
+ }
+
+ button{
+   height:30px;
+ }

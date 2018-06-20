@@ -1,0 +1,36 @@
+doctype
+html
+  head
+    title node-bibli admin
+  body
+    h1 Modifier info
+    - var id = livre._id
+    form(action='/admin/edit/'+ id, method='POST')
+      p titre
+      input(type="text", name="titre", value=livre.titre)
+      br
+      p auteur
+      input(type="text", name="auteur", value=livre.auteur)
+      br
+      p prix
+      input(type="text", name="prix", value=livre.prix)
+      br
+      p isbn
+      input(type="text", name="isbn", value=livre.isbn)
+      br
+      p date
+      input(type="text", name="date", value=livre.date)
+      br
+      p couv
+      input(type="text", name="couv", value=livre.couv)
+      br
+      p phrase intro
+      input(type="text", name="resume", value=livre.resume)
+      br
+      p résumé
+      input(type="text", name="info", value=livre.info)
+      br
+      p catégorie
+      input(type="text", name="cat", value=livre.cat)
+      
+      input(type="submit", value="envoyer")

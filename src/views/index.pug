@@ -1,0 +1,28 @@
+extends layout
+block content
+  div(class='div-class')
+    ul
+      a(href="http://localhost:3005/acceuil/")
+        li(class="onglet-bibli") biliothèque
+      a(href="http://localhost:3005/accueil/categorie")
+        li(class="onglet-cat") catégorie
+  div(id='shelf')
+    each livre in livres
+      div(class="fiche-livre")
+        div
+          - var img = livre.couv
+          img(src='/uploads/'+ img)
+        div(class="titre")
+         p= livre.titre
+        div(class="auteur")
+          p= livre.auteur
+        div(class="prix")
+          p= livre.prix
+          p €
+        div(class="resume")  
+          p= livre.resume
+        div(class="voir-plus")
+          - var linkTofiche = livre.id
+          a(href="/livres/" + linkTofiche)
+            button(type="button") Voir plus
+              

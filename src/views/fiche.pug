@@ -1,0 +1,18 @@
+extends layout
+block content
+  h1 #{livre.titre}
+  p #{livre.auteur}
+  p #{livre.date}
+  div(class="container")
+    div(class="couverture")
+      - var img = livre.couv
+      img(src='/uploads/'+ img)
+      
+    div(class="resume")
+      div(class="text")
+        p #{livre.info}
+      div(class="boutique")
+        div(class="prix")
+          p #{livre.prix} €
+          
+      
