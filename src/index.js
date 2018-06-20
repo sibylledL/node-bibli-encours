@@ -23,8 +23,8 @@ import { ficheRouter } from './routes/fiche.js'
 import { accueilRouter } from './routes/accueil.js'
 
 
-const { SERVER_PORT, DBUrl } = process.env
-const url = DBUrl;
+const port = process.env.PORT || 3000;
+const url = process.env.MONGODB_URI || "mongodb://sdL:nodebibli1@ds261470.mlab.com:61470/bibli_db";
 
 app.use(bodyParser.urlencoded({ extended : true }))
 import { Livre } from "./models/livres";
@@ -80,6 +80,6 @@ import { User } from './models/users';
 })*/
 
 
-app.listen(SERVER_PORT,() => {
-  console.log(`Express running on:`, SERVER_PORT)
+app.listen(port,"0.0.0.0",() => {
+  console.log("magic happens")
 });
