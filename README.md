@@ -22,10 +22,11 @@ Il s'agit d'un projet en cours de construction. Je me suis basée sur un projet 
 - /admin/login
   permet de s'enregistrer.
 
-le porchain objectif est de placer l'authentification à la racide de la route admin ne laissant le droit de modification des données qu'à ceux qui se sont déjà enregistré. 
-Le signin et login marche mais des messages 'connect-flash' doivent être mis en place.
+Prochain objectif : 
+  - placer l'authentification à la racide de la route admin ne laissant le droit de modification des données qu'à ceux qui se sont déjà enregistré. 
+  - Le signin et login marche mais des messages 'connect-flash' doivent être mis en place.
+  - ajout bouton et fonction supprimer dans la page edit.
+  - régler le problème de déploiement sur Heroku. Le chemin des images casses à la commande "git push heroku master"
 
-Difficultés rencontrées sur l'authentification avec passport, passport-local.
-Mais un grand plaisir à le faire!
 
-Problème rencontré également dans le déploiement sur Heroku, l'app tourne mais les pages qui sollicitent la base de données mettent plus de 30s à répondre et heroku met donc fin à la requête. Toujours en train de chercher la solution.
+Ce projet est en cours de réalisation, malgrès les difficultés j'ai toujours un grand plaisir à le travailler!
